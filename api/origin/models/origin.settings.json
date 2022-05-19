@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "origins",
+  "info": {
+    "name": "origin",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "test": {
+      "type": "string"
+    },
+    "hasOneDestination": {
+      "model": "destination"
+    },
+    "hasAndBelongsToOneDestination": {
+      "model": "destination",
+      "via": "origin"
+    },
+    "belongsToManyDestinations": {
+      "collection": "destination",
+      "via": "origin"
+    },
+    "hasManyOrigins": {
+      "model": "destination",
+      "via": "origins"
+    },
+    "hasAndBelongsToManyDestinations": {
+      "collection": "destination",
+      "via": "origins",
+      "dominant": true
+    },
+    "hasManyDestinations": {
+      "collection": "destination"
+    }
+  }
+}

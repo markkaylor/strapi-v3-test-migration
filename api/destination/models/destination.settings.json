@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "destinations",
+  "info": {
+    "name": "destination"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "test": {
+      "type": "string"
+    },
+    "origin": {
+      "via": "belongsToManyDestinations",
+      "model": "origin"
+    },
+    "origins": {
+      "via": "hasAndBelongsToManyDestinations",
+      "collection": "origin"
+    }
+  }
+}
