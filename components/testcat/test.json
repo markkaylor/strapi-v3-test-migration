@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_testcat_tests",
+  "info": {
+    "name": "test",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "boom": {
+      "type": "string"
+    }
+  }
+}
