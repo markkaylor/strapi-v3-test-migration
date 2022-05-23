@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/singulars",
+      "handler": "singular.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/singulars/count",
+      "handler": "singular.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/singulars/:id",
+      "handler": "singular.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/singulars",
+      "handler": "singular.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/singulars/:id",
+      "handler": "singular.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/singulars/:id",
+      "handler": "singular.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
