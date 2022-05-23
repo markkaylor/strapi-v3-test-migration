@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/long-word-plurals",
+      "handler": "long-word-plurals.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/long-word-plurals/count",
+      "handler": "long-word-plurals.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/long-word-plurals/:id",
+      "handler": "long-word-plurals.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/long-word-plurals",
+      "handler": "long-word-plurals.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/long-word-plurals/:id",
+      "handler": "long-word-plurals.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/long-word-plurals/:id",
+      "handler": "long-word-plurals.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "long_word_plurals",
+  "info": {
+    "name": "Long word plurals"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "plop": {
+      "type": "string"
+    }
+  }
+}
