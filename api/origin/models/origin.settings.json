@@ -26,7 +26,7 @@
       "collection": "destination",
       "via": "origin"
     },
-    "hasManyOrigins": {
+    "destinationHasManyOrigins": {
       "model": "destination",
       "via": "origins"
     },
@@ -37,6 +37,59 @@
     },
     "hasManyDestinations": {
       "collection": "destination"
+    },
+    "hasOneUser": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "hasAndBelongsToOneUser": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "origin"
+    },
+    "belongsToManyUsers": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "origin"
+    },
+    "hasManyOrigins": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "origins"
+    },
+    "hasAndBelongsToManyUsers": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "origins",
+      "dominant": true
+    },
+    "hasManyUsers": {
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
